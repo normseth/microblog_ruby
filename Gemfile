@@ -15,7 +15,6 @@ end
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
-  gem 'pg', '0.15.1'
 end
 
 gem 'sass-rails', '4.0.1'
@@ -29,6 +28,6 @@ group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
-group :production do
+group :test, :production do
   gem 'pg', '0.15.1'
 end
